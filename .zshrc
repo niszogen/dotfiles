@@ -29,3 +29,4 @@ f() {
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
 
+export EDITOR=/bin/nvim
