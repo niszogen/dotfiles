@@ -30,3 +30,15 @@ f() {
 }
 
 export EDITOR=/bin/nvim
+
+
+# pnpm
+export PNPM_HOME="/home/niszogen/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+alias ls="busybox ls"
+alias sigmaradio="curl 'http://stream3.polskieradio.pl:8956' --no-buffer --http0.9 | ffplay - -nodisp"
+alias flatfuck="flatpak"
