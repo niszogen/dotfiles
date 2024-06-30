@@ -42,3 +42,6 @@ esac
 alias ls="busybox ls"
 alias sigmaradio="curl 'http://stream3.polskieradio.pl:8956' --no-buffer --http0.9 | ffplay - -nodisp"
 alias flatfuck="flatpak"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
